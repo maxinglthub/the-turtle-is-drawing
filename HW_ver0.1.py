@@ -23,6 +23,7 @@ t.penup()
 
 
 t.goto(0, 0)
+t.pendown()
 
 a = 0
 b = 0
@@ -40,6 +41,7 @@ while True:
         a = a + 1
         c = c - 1
         x = x + 40
+
     elif a == 2:
         t.right(180)
         t.forward(40)
@@ -55,6 +57,7 @@ while True:
         b = b + 1 
         d = d - 1
         y = y - 40
+
     elif b == 2:
         t.left(90)
         t.forward(40)
@@ -70,6 +73,8 @@ while True:
         c = c + 1
         a = a - 1
         x = x - 40
+
+        point.append(1)
     elif c == 2:
         t.forward(40)
         c = c - 1
@@ -83,6 +88,7 @@ while True:
         d = d + 1
         b = b - 1
         y = y + 40
+
     elif d == 2:
         t.right(90)
         t.forward(40)
